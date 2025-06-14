@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Confidence Booster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🎯 Vocal-Voice</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                <li><a href="#" data-page="login" class="nav-link">Login</a></li>
+                <li><a href="#" data-page="dashboard" class="nav-link">Dashboard</a></li>
+                <li><a href="#" data-page="quiz" class="nav-link">Quiz</a></li>
+                <li><a href="#" data-page="voice" class="nav-link">Voice Practice</a></li>
+                <li><a href="#" data-page="leaderboard" class="nav-link">Leaderboard</a></li>
+                <li><a href="#" data-page="tips" class="nav-link">Tips</a></li>
+                <li><a href="#" data-page="rewards" class="nav-link">Rewards</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Background Elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="text-gradient">Boost Your Confidence,</span><br>
+                        <span class="text-bounce">One Debate at a Time</span>
+                    </h1>
+                    <p class="hero-subtitle">Master the art of public speaking with our gamified platform designed for students who want to excel in debates and presentations.</p>
+                    <button class="cta-button" data-page="dashboard">
+                        <span>Start Your Journey</span>
+                        <div class="button-glow"></div>
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">🎤</div>
+                        <h3>Voice Practice</h3>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="card-icon">🏆</div>
+                        <h3>Achievements</h3>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="card-icon">💡</div>
+                        <h3>Smart Tips</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-section">
+                <h2 class="section-title">Why Choose Vocal-Voice ?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Gamified Learning</h3>
+                        <p>Earn XP, unlock badges, and compete with friends while improving your debate skills.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔊</div>
+                        <h3>Voice Analysis</h3>
+                        <p>Practice with AI-powered voice recognition to improve your speaking pace and confidence.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Expert Tips</h3>
+                        <p>Learn from debate champions with curated tips and strategies for every situation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login/Signup Page -->
+        <section id="login" class="page">
+            <div class="auth-container">
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <h2 id="auth-title">Welcome Back!</h2>
+                        <p id="auth-subtitle">Sign in to continue your debate journey</p>
+                    </div>
+                    
+                    <form id="auth-form" class="auth-form">
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" id="password" required>
+                            <label for="password">Password</label>
+                        </div>
+                        
+                        <div class="form-group" id="confirm-password-group" style="display: none;">
+                            <input type="password" id="confirm-password">
+                            <label for="confirm-password">Confirm Password</label>
+                        </div>
+                        
+                        <button type="submit" class="auth-button">
+                            <span id="auth-button-text">Sign In</span>
+                        </button>
+                    </form>
+                    
+                    <div class="auth-switch">
+                        <p id="auth-switch-text">Don't have an account? <span id="auth-switch-link">Sign up</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Page -->
+        <section id="dashboard" class="page">
+            <div class="dashboard-header">
+                <h1>Welcome back, <span class="text-gradient">Alex!</span></h1>
+                <p>Ready to boost your confidence today?</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-content">
+                        <h3>Current XP</h3>
+                        <div class="xp-bar">
+                            <div class="xp-fill" data-xp="750"></div>
+                        </div>
+                        <p><span class="xp-current">750</span> / 1000 XP</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🏅</div>
+                    <div class="stat-content">
+                        <h3>Current Level</h3>
+                        <div class="level-badge intermediate">Intermediate</div>
+                        <p>Level 3 Speaker</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-content">
+                        <h3>Success Rate</h3>
+                        <div class="success-rate">
+                            <div class="rate-circle" data-rate="85"></div>
+                        </div>
+                        <p>85% Accuracy</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dashboard-content">
+                <div class="content-section">
+                    <h2>Your Challenges</h2>
+                    <div class="challenge-cards">
+                        <div class="challenge-card">
+                            <div class="challenge-icon">🎤</div>
+                            <h3>Voice Practice</h3>
+                            <p>Practice your speech without "um" and "uh"</p>
+                            <div class="challenge-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                                <span>3/5 attempts</span>
+                            </div>
+                        </div>
+                        
+                        <div class="challenge-card">
+                            <div class="challenge-icon">❓</div>
+                            <h3>Logic Quiz</h3>
+                            <p>Test your knowledge of logical fallacies</p>
+                            <div class="challenge-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
+                                <span>8/10 questions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-section">
+                    <h2>Recent Achievements</h2>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <div class="achievement-icon">🏆</div>
+                            <div class="achievement-content">
+                                <h4>Logic Master</h4>
+                                <p>Completed 10 fallacy quizzes</p>
+                            </div>
+                            <div class="achievement-date">2 days ago</div>
+                        </div>
+                        
+                        <div class="achievement-item">
+                            <div class="achievement-icon">🎯</div>
+                            <div class="achievement-content">
+                                <h4>Confidence Booster</h4>
+                                <p>Practiced speaking for 5 days straight</p>
+                            </div>
+                            <div class="achievement-date">1 week ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Page -->
+        <section id="quiz" class="page">
+            <div class="quiz-header">
+                <h1>Logical Fallacy Quiz</h1>
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="quiz-progress"></div>
+                    </div>
+                    <span id="quiz-counter">Question 1 of 5</span>
+                </div>
+            </div>
+            
+            <div class="quiz-container">
+                <div class="question-card" id="question-card">
+                    <h2 id="question-text">Which logical fallacy occurs when someone attacks the person making an argument rather than the argument itself?</h2>
+                    
+                    <div class="options-container">
+                        <div class="option-card" data-option="0">
+                            <span class="option-letter">A</span>
+                            <span class="option-text">Straw Man</span>
+                        </div>
+                        <div class="option-card" data-option="1">
+                            <span class="option-letter">B</span>
+                            <span class="option-text">Ad Hominem</span>
+                        </div>
+                        <div class="option-card" data-option="2">
+                            <span class="option-letter">C</span>
+                            <span class="option-text">False Dilemma</span>
+                        </div>
+                        <div class="option-card" data-option="3">
+                            <span class="option-letter">D</span>
+                            <span class="option-text">Circular Reasoning</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quiz-controls">
+                    <button id="next-question" class="quiz-button" disabled>Next Question</button>
+                </div>
+            </div>
+            
+            <div class="quiz-result" id="quiz-result" style="display: none;">
+                <div class="result-card">
+                    <h2>Quiz Complete!</h2>
+                    <div class="result-score">
+                        <div class="score-circle">
+                            <span id="final-score">4/5</span>
+                        </div>
+                    </div>
+                    <p>Great job! You earned <span class="xp-gain">+50 XP</span></p>
+                    <button class="quiz-button" onclick="resetQuiz()">Try Again</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voice Practice Page -->
+        <section id="voice" class="page">
+            <div class="voice-header">
+                <h1>Voice Practice Tool</h1>
+                <p>Practice your speech and get instant feedback</p>
+            </div>
+            
+            <div class="voice-container">
+                <div class="practice-card">
+                    <div class="practice-prompt">
+                        <h3>Practice Prompt</h3>
+                        <p id="practice-text">"Technology has made our lives better. Discuss the advantages and disadvantages of modern technology in education."</p>
+                        <button class="regenerate-prompt">🔄 New Prompt</button>
+                    </div>
+                    
+                    <div class="recording-section">
+                        <div class="mic-container">
+                            <button id="record-button" class="mic-button">
+                                <div class="mic-icon">🎤</div>
+                                <div class="pulse-ring"></div>
+                            </button>
+                            <p id="recording-status">Click to start recording</p>
+                        </div>
+                        
+                        <div class="recording-timer">
+                            <span id="timer">00:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feedback-section" id="feedback-section" style="display: none;">
+                    <h2>Your Performance</h2>
+                    <div class="feedback-grid">
+                        <div class="feedback-card">
+                            <div class="feedback-icon">⏱️</div>
+                            <h3>Speaking Duration</h3>
+                            <p class="feedback-value" id="duration-feedback">2 minutes 30 seconds</p>
+                        </div>
+                        
+                        <div class="feedback-card">
+                            <div class="feedback-icon">⏸️</div>
+                            <h3>Pause Count</h3>
+                            <p class="feedback-value" id="pause-feedback">3 noticeable pauses</p>
+                        </div>
+                        
+                        <div class="feedback-card">
+                            <div class="feedback-icon">💬</div>
+                            <h3>Filler Words</h3>
+                            <p class="feedback-value" id="filler-feedback">2 "um"s detected</p>
+                        </div>
+                        
+                        <div class="feedback-card">
+                            <div class="feedback-icon">🎯</div>
+                            <h3>Confidence Score</h3>
+                            <div class="confidence-circle">
+                                <div class="circle-progress" data-score="78"></div>
+                                <span class="score-text">78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="improvement-tips">
+                        <h3>💡 Tips for Improvement</h3>
+                        <ul>
+                            <li>Try to reduce filler words by pausing instead of saying "um"</li>
+                            <li>Practice speaking at a consistent pace</li>
+                            <li>Your argument structure was clear - keep it up!</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="practice-again-btn" onclick="resetPractice()">Practice Again</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Page -->
+        <section id="leaderboard" class="page">
+            <div class="leaderboard-header">
+                <h1>🏆 Global Leaderboard</h1>
+                <p>See how you stack up against the best debaters!</p>
+            </div>
+            
+            <div class="leaderboard-container">
+                <div class="podium">
+                    <div class="podium-place second">
+                        <div class="podium-user">
+                            <div class="user-avatar">S</div>
+                            <h3>Sarah Kim</h3>
+                            <p>2,450 XP</p>
+                        </div>
+                        <div class="podium-rank">2</div>
+                    </div>
+                    
+                    <div class="podium-place first">
+                        <div class="podium-crown">👑</div>
+                        <div class="podium-user">
+                            <div class="user-avatar">M</div>
+                            <h3>Mike Johnson</h3>
+                            <p>2,890 XP</p>
+                        </div>
+                        <div class="podium-rank">1</div>
+                    </div>
+                    
+                    <div class="podium-place third">
+                        <div class="podium-user">
+                            <div class="user-avatar">E</div>
+                            <h3>Emma Davis</h3>
+                            <p>2,120 XP</p>
+                        </div>
+                        <div class="podium-rank">3</div>
+                    </div>
+                </div>
+                
+                <div class="leaderboard-table">
+                    <div class="table-header">
+                        <span>Rank</span>
+                        <span>User</span>
+                        <span>XP</span>
+                        <span>Level</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="rank">4</span>
+                        <div class="user-info">
+                            <div class="user-avatar small">A</div>
+                            <span>Alex Thompson (You)</span>
+                        </div>
+                        <span class="xp">1,750</span>
+                        <span class="level">Intermediate</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="rank">5</span>
+                        <div class="user-info">
+                            <div class="user-avatar small">J</div>
+                            <span>Jessica Lee</span>
+                        </div>
+                        <span class="xp">1,640</span>
+                        <span class="level">Intermediate</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="rank">6</span>
+                        <div class="user-info">
+                            <div class="user-avatar small">D</div>
+                            <span>David Wilson</span>
+                        </div>
+                        <span class="xp">1,520</span>
+                        <span class="level">Beginner</span>
+                    </div>
+                    
+                    <div class="table-row">
+                        <span class="rank">7</span>
+                        <div class="user-info">
+                            <div class="user-avatar small">L</div>
+                            <span>Lisa Garcia</span>
+                        </div>
+                        <span class="xp">1,390</span>
+                        <span class="level">Beginner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips & Tricks Page -->
+        <section id="tips" class="page">
+            <div class="tips-header">
+                <h1>💡 Tips & Tricks</h1>
+                <p>Master debate techniques with expert advice</p>
+            </div>
+            
+            <div class="tips-categories">
+                <button class="category-btn active" data-category="rebuttals">🎯 Rebuttals</button>
+                <button class="category-btn" data-category="fallacies">⚠️ Fallacies</button>
+                <button class="category-btn" data-category="framing">🖼️ Framing</button>
+                <button class="category-btn" data-category="confidence">💪 Confidence</button>
+            </div>
+            
+            <div class="tips-grid" id="tips-container">
+                <!-- Rebuttals Tips -->
+                <div class="tip-card" data-category="rebuttals">
+                    <div class="tip-front">
+                        <div class="tip-icon">🎯</div>
+                        <h3>Listen First</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Active Listening</h3>
+                        <p>Always listen carefully to your opponent's argument before formulating your rebuttal. Take notes on key points and identify the weakest link in their reasoning.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-card" data-category="rebuttals">
+                    <div class="tip-front">
+                        <div class="tip-icon">🔍</div>
+                        <h3>Find the Flaw</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Logical Analysis</h3>
+                        <p>Look for logical fallacies, unsupported claims, or contradictions in your opponent's argument. Address these systematically to weaken their position.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-card" data-category="rebuttals">
+                    <div class="tip-front">
+                        <div class="tip-icon">📊</div>
+                        <h3>Use Evidence</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Counter-Evidence</h3>
+                        <p>Support your rebuttals with facts, statistics, or expert opinions. Concrete evidence makes your counter-arguments more compelling and credible.</p>
+                    </div>
+                </div>
+                
+                <!-- Fallacies Tips -->
+                <div class="tip-card" data-category="fallacies" style="display: none;">
+                    <div class="tip-front">
+                        <div class="tip-icon">👥</div>
+                        <h3>Ad Hominem</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Personal Attacks</h3>
+                        <p>Avoid attacking the person making the argument. Focus on the argument itself. When opponents use ad hominem, point it out to show their weakness.</p>
+                    </div>
+                </div>
+                
+                <div class="tip-card" data-category="fallacies" style="display: none;">
+                    <div class="tip-front">
+                        <div class="tip-icon">🥴</div>
+                        <h3>Straw Man</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Misrepresentation</h3>
+                        <p>Don't misrepresent your opponent's argument to make it easier to attack. Address their actual position, not a distorted version of it.</p>
+                    </div>
+                </div>
+                
+                <!-- Framing Tips -->
+                <div class="tip-card" data-category="framing" style="display: none;">
+                    <div class="tip-front">
+                        <div class="tip-icon">🎭</div>
+                        <h3>Emotional Appeal</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Connect with Audience</h3>
+                        <p>Frame your arguments in terms that resonate emotionally with your audience while maintaining logical validity. Stories and examples work well.</p>
+                    </div>
+                </div>
+                
+                <!-- Confidence Tips -->
+                <div class="tip-card" data-category="confidence" style="display: none;">
+                    <div class="tip-front">
+                        <div class="tip-icon">💪</div>
+                        <h3>Body Language</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Stand Tall</h3>
+                        <p>Maintain good posture, make eye contact, and use purposeful gestures. Your body language should convey confidence even when you feel nervous.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rewards Page -->
+        <section id="rewards" class="page">
+            <div class="rewards-header">
+                <h1>🎁 Your Rewards</h1>
+                <p>Unlock badges and redeem awesome prizes!</p>
+            </div>
+            
+            <div class="points-display">
+                <div class="points-card">
+                    <h2>Your Points</h2>
+                    <div class="points-counter" id="points-counter">0</div>
+                    <p>Debate Coins</p>
+                </div>
+            </div>
+            
+            <div class="rewards-sections">
+                <div class="badges-section">
+                    <h2>🏅 Your Badges</h2>
+                    <div class="badges-grid">
+                        <div class="badge-card earned">
+                            <div class="badge-icon">🎤</div>
+                            <h3>First Speech</h3>
+                            <p>Completed your first voice practice</p>
+                        </div>
+                        
+                        <div class="badge-card earned">
+                            <div class="badge-icon">🧠</div>
+                            <h3>Logic Master</h3>
+                            <p>Answered 10 quiz questions correctly</p>
+                        </div>
+                        
+                        <div class="badge-card earned">
+                            <div class="badge-icon">⚡</div>
+                            <h3>Quick Learner</h3>
+                            <p>Reached 500 XP in first week</p>
+                        </div>
+                        
+                        <div class="badge-card locked">
+                            <div class="badge-icon">🏆</div>
+                            <h3>Debate Champion</h3>
+                            <p>Win 10 debate challenges</p>
+                        </div>
+                        
+                        <div class="badge-card locked">
+                            <div class="badge-icon">🎯</div>
+                            <h3>Perfectionist</h3>
+                            <p>Score 100% on 5 quizzes</p>
+                        </div>
+                        
+                        <div class="badge-card locked">
+                            <div class="badge-icon">🌟</div>
+                            <h3>Rising Star</h3>
+                            <p>Reach the top 10 leaderboard</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shop-section">
+                    <h2>🛍️ Redeem Rewards</h2>
+                    <div class="shop-grid">
+                        <div class="shop-item">
+                            <div class="item-image">📚</div>
+                            <h3>Debate Handbook</h3>
+                            <p>Comprehensive guide to advanced debate techniques</p>
+                            <div class="item-price">500 coins</div>
+                            <button class="redeem-btn">Redeem</button>
+                        </div>
+                        
+                        <div class="shop-item">
+                            <div class="item-image">🎧</div>
+                            <h3>Premium Headset</h3>
+                            <p>High-quality headset for voice practice sessions</p>
+                            <div class="item-price">1000 coins</div>
+                            <button class="redeem-btn">Redeem</button>
+                        </div>
+                        
+                        <div class="shop-item">
+                            <div class="item-image">👕</div>
+                            <h3>DebateBoost T-Shirt</h3>
+                            <p>Show off your debate skills with official merch</p>
+                            <div class="item-price">750 coins</div>
+                            <button class="redeem-btn">Redeem</button>
+                        </div>
+                        
+                        <div class="shop-item">
+                            <div class="item-image">🏆</div>
+                            <h3>Masterclass Access</h3>
+                            <p>1-month access to expert debate masterclasses</p>
+                            <div class="item-price">1500 coins</div>
+                            <button class="redeem-btn">Redeem</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
