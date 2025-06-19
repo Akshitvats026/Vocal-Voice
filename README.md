@@ -3,7 +3,7 @@
 **Vocal-Voice** is a fully responsive, gamified educational website built using pure **HTML, CSS, and JavaScript**. It helps school and college students learn the art of debating and public speaking through interactive tools, animations, quizzes, and speech analysis—all with a vibrant, modern UI and a fun learning experience.
 
 ---
-
+  
 ## 🌟 Features
 
 ### 🏠 Home Page
