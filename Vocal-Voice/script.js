@@ -1,4 +1,4 @@
-// Global Variables
+// Global Variable
 let currentQuestionIndex = 0;
 let score = 0;
 let isRecording = false;
